@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>半導體製程配對遊戲｜Match the Process</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="match.js"></script>
+</head>
+<body>
+  <div id="main-menu">
+    <h1>🔗 半導體製程配對遊戲</h1>
+    <p>請將製程名稱與其應用或原理正確配對</p>
+    <button onclick="startMatchGame()">開始遊戲</button>
+  </div>
+
+  <div id="game-screen" class="hidden">
+    <h2>拖曳左邊的製程名稱到右邊的對應應用</h2>
+    <div id="match-container">
+      <div id="left-column" class="column"></div>
+      <div id="right-column" class="column"></div>
+    </div>
+    <button onclick="checkMatches()">提交答案</button>
+  </div>
+
+  <div id="result-screen" class="hidden">
+    <h2 id="result-message"></h2>
+    <button onclick="location.reload()">再玩一次</button>
+  </div>
+</body>
+</html>

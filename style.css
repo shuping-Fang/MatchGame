@@ -1,0 +1,36 @@
+
+body {
+  font-family: "微軟正黑體", sans-serif;
+  text-align: center;
+  background: #f4f8ff;
+  margin: 0;
+  padding: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#match-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 40%;
+}
+
+.draggable, .droppable {
+  padding: 12px;
+  border: 2px solid #444;
+  background: #fff;
+  border-radius: 10px;
+  cursor: grab;
+  min-height: 60px;
+  white-space: pre-wrap;
+}
